@@ -1,6 +1,6 @@
 import React from 'react';
 import { Instagram, Linkedin, ArrowRight } from 'lucide-react';
-import logo from '../../public/andrey.jpg';
+// import logo from '../../public/andrey.jpg';
 // import cover from '../../public/close-up-dumbbells-gym.jpg'
 interface HeroProps {
   onGetStarted: (service?: string) => void;
@@ -45,7 +45,7 @@ const Hero: React.FC<HeroProps> = ({ onGetStarted }) => {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <button
                 onClick={scrollToServices}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-xl shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 text-lg font-bold flex items-center"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-xl shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 text-lg font-bold flex justify-center items-center"
               >
                 Start Your Transformation
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -98,7 +98,8 @@ const Hero: React.FC<HeroProps> = ({ onGetStarted }) => {
           <div className="relative flex justify-center">
             <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-white/5 backdrop-blur-md">
               <img
-                src={logo}
+                // src={logo}
+                src='/andrey.jpg'
                 alt="Andrey Kumov"
                 className="w-full h-full object-cover"
               />

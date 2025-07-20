@@ -47,7 +47,8 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ isOpen, onClose, selectedSe
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-3xl max-w-md w-full max-h-[90vh] overflow-y-auto shadow-2xl transform transition-all duration-300">
+      {/* <div className="bg-white rounded-3xl max-w-md w-full max-h-[90vh] overflow-y-auto shadow-2xl transform transition-all duration-300"> */}
+      <div className="bg-white rounded-3xl max-w-md w-full max-h-[90vh] overflow-hidden shadow-2xl">
         {/* Header */}
         <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-6 rounded-t-3xl relative">
           <button
@@ -60,7 +61,7 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ isOpen, onClose, selectedSe
           <p className="text-blue-100">Tell me about your fitness goals</p>
         </div>
 
-        <div className="p-6">
+        <div className="p-6 overflow-y-auto max-h-[calc(90vh-120px)]">
           {isSubmitted ? (
             <div className="text-center py-8">
               <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
